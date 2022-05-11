@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="39b0650712ee47419ff128178ee5fee7" Name="Diagram1">
+        <EntityTypeShape EntityType="PoprizhonokModel.Agent" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Agent_SellPoint" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.AgentType" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Director" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Emploee" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Employee_HealthProblem" Width="1.5" PointX="12.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.HealthProblem" Width="1.5" PointX="10" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Material" Width="1.5" PointX="10" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.MaterialType" Width="1.5" PointX="7.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.MinimumPrice" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Package" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Pasport" Width="1.5" PointX="7.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.PriorityHistory" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Product" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Product_Standard" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Production" Width="1.5" PointX="10" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Production_material" Width="1.5" PointX="12.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.ProductSale" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.ProductType" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.SellPoint" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Standard" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Storage" Width="1.5" PointX="12.25" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.Supplier" Width="1.5" PointX="10" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.SupplierType" Width="1.5" PointX="7.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.SupplyHistory" Width="1.5" PointX="12.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoprizhonokModel.sysdiagrams" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Agent_AgentType" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Agent_Director" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Agent_SellPoint_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_MinimumPrice_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_PriorityHistory_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_ProductSale_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Agent_SellPoint_SellPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Emploee_Pasport" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Employee_HealthProblem_Emploee" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Employee_HealthProblem_HealthProblem" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Material_MaterialType" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Production_material_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Storage_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_SupplyHistory_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_MinimumPrice_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Product_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Product_Standard_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Product_Standard_Standard" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Production_material_Production" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_Supplier_SupplierType" ManuallyRouted="false" />
+        <AssociationConnector Association="PoprizhonokModel.FK_SupplyHistory_Supplier" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
